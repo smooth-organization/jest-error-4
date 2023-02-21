@@ -6,4 +6,9 @@ describe('react test', () => {
 		const { getByText } = render(<App />)
 		expect(getByText('this is my app')).toBeTruthy()
 	})
+
+	it('should fail', () => {
+		const { getByText } = render(<App />)
+		expect(getByText('this is my app 2')).toBeTruthy()
+	})
 })
